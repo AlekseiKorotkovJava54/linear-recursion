@@ -101,7 +101,7 @@ public class LinearRecursionMethods {
 	
 	public static String newString(int index, String str) {
 		String res = "";
-		if(index < str.length()-1) res = "" + str.charAt(index) + newString(index +1 , str);
+		if(index < str.length()-1) res = str.charAt(index) + newString(index +1 , str);
 		return res;
 	}
 	
