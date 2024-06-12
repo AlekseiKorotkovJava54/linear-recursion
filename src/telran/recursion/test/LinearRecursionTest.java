@@ -35,6 +35,7 @@ class LinearRecursionTest {
 	void xPowerY2Test() {
 		assertEquals(100, xPowerY2(10,2)); 
 		assertEquals(100, xPowerY2(-10,2));
+		assertEquals(-10, xPowerY2(-10,1));
 		assertEquals(1000, xPowerY2(10,3));
 		assertEquals(-1000, xPowerY2(-10,3));
 		assertEquals(1, xPowerY2(1000,0));
@@ -83,5 +84,10 @@ class LinearRecursionTest {
 		assertFalse(isSubstring(str,"blal"));
 		assertFalse(isSubstring(str,"bladds"));
 		assertFalse(isSubstring(str,"daba"));
+	}
+	
+	@Test 
+	void powerSumTest() {
+		assertEquals(10, powerSum(1,10));
 	}
 }
