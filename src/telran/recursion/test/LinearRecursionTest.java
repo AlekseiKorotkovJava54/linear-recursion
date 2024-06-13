@@ -33,7 +33,7 @@ class LinearRecursionTest {
 	
 	@Test
 	void xPowerY2Test() {
-		assertEquals(100, xPowerY2(10,2)); 
+		assertEquals(1000000, xPowerY2(10,6)); 
 		assertEquals(100, xPowerY2(-10,2));
 		assertEquals(-10, xPowerY2(-10,1));
 		assertEquals(1000, xPowerY2(10,3));
